@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <!-- Let's Create a Resume Builder -->
+    <div class="container">
+        <h1 id="myheading">Resume Builder</h1>
+        
+        <form id="resume-form" method="post">
+            <!-- I created a personal information section -->
+            <div class="section">
+                <h2>Personal Information</h2>
+                <label for="name" class="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+                
+                <label for="designation" class="designations">Designation:</label>
+                <input type="text" id="designation" class="designation1" placeholder="Enter your designation1" required>
+                
+                <label for="email" class="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" placeholder="Enter your phone number" required>
+                
+                <label for="linkedin">Linkedin:</label>
+                <input type="text" id="linkedin" placeholder="Enter your Linkedin URL" required>
+                
+                <label for="description" class="description">Summary:</label>
+                <textarea name="description" id="description" placeholder="Enter your Profile Summary"></textarea>
+                
+                <label for="usrimg">Select Your Image:</label>
+                <input type="file" id="usrimg" name="usrimg" accept="image/*" required>
+            </div>
+
+            <!-- I create a Education section -->
+            <div class="section">
+                <h2>Education</h2>
+                <label for="degree" class="degree">Degree:</label>
+                <input type="text" id="degree" placeholder="Enter your degree" required>
+                
+                <label for="institution">Institution:</label>
+                <input type="text" id="institution" placeholder="Enter your institution name" required>
+                
+                <label for="year1">Passing Year:</label>
+                <div class="select">
+                    <select id="year1">
+                        <option value="">Select Year</option>
+                        <option value="2024" selected>2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <!-- Continue with as many years as needed -->
+                    </select>
+                    <select id="year2">
+                        <option value="present" selected>present</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <!-- Continue with as many years as needed -->
+                    </select>
+                </div>
+                
+            </div>
+            <!-- I create a project section -->
+            <div class="section">
+                <h2>Project</h2>
+                <label for="projecttitle">project Name:</label>
+                <input type="text" id="projecttitle" placeholder="Enter your project Name">
+                <label for="Projectdescription" class="description">Project Description:</label>
+                <textarea name="description" id="Projectdescription" placeholder="Enter your Project description"></textarea>
+            </div>
+            
+            <!-- I create a Experience section -->
+            <div class="section">
+                <h2>Experience</h2>
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" placeholder="Enter your job title">
+                
+                <label for="company">Company:</label>
+                <input type="text" id="company" placeholder="Enter company name">
+                
+                <label for="duration">Duration:</label>
+                <select id="duration">
+                    <option value="">Select Duration</option>
+                    <option value="1Year">1Year</option>
+                    <option value="2Year">2Year</option>
+                    <option value="3Year">3Year</option>
+                    <option value="4Year">4Year</option>
+                    <option value="5Year">5Year</option>
+                    <option value="6Year">6Year</option>
+                    <option value="7Year">7Year</option>
+                    <option value="8Year">8Year</option>
+                    <option value="9Year">9Year</option>
+                    <option value="10Year">10Year</option>
+                    <!-- Continue with as many years as needed -->
+                </select>
+            </div>
+            
+            <!-- I create a Skills section -->
+            <div class="section" id="skills">
+                <h2>Skills</h2>
+                <input type="text" id="skill1" placeholder="Enter a skill" >
+                <input type="text" id="skill2" placeholder="Enter another skill">
+                <input type="text" id="skill3" placeholder="Enter a third skill">
+            </div>
+            
+            <!-- I create a Buttons -->
+            <div class="buttons">
+                <input type="submit" class="submit-btn" onclick="event.preventDefault(); generateResume()">
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div id="resume-display"></div>
+    
+    <script src="resumeBuilder.js"></script>
+</body>
+</html>

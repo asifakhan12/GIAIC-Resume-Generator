@@ -1,0 +1,164 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Layout and Background */
+  body {
+    background-color: #f7f9fb;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .resume-container {
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1d5db;
+    transition: transform 0.3s ease;
+  }
+  
+  .resume-container:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    color: #34ace0;
+    font-weight: 700;
+  }
+  .image{
+    width: 250px;
+    height: 250px;
+  }
+  img{
+    width: 250px;
+    height: 250px;
+  }
+  .header p {
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .contact-info p {
+    color: #4b5563;
+    font-size: 18px;
+    margin: 5px 0;
+    transition: color 0.3s;
+  }
+  
+  .contact-info p:hover {
+    color: #1d4ed8;
+    cursor: pointer;
+  }
+  
+  /* Sections */
+  section {
+    margin-bottom: 25px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: #1e40af;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  p {
+    color: #374151;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .linkedin{
+    color: #4b5563;
+    text-decoration: none;
+  }
+  .linkedin:hover{
+    color: #1d4ed8;
+  }
+  
+  /* Skills Section */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill-item {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    background-color: #1e40af;
+    color: #ffffff;
+  }
+  
+  /* Projects Section */
+  .project-card {
+    background-color: #f1f5f9;
+    border: 1px solid #d1d5db;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-card h3 {
+    font-size: 20px;
+    color: #1d4ed8;
+    margin-bottom: 8px;
+  }
+  
+  .project-card:hover {
+    background-color: #e0f2fe;
+  }
+  
+  /* Work Experience */
+  .job h3 {
+    font-size: 20px;
+    color: #2563eb;
+    margin-bottom: 5px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .job h3:hover {
+    color: #1d4ed8;
+  }
+  
+  .job p {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 10px;
+  }
+  
+  /* Education */
+  .education p {
+    font-size: 15px;
+    color: #6b7280;
+  }
+  
